@@ -98,6 +98,11 @@
     .advantage-icon {
       color: var(--primary);
     }
+
+    /* 添加 text-primary 类的样式 */
+    .text-primary {
+      color: var(--primary);
+    }
   </style>
 </head>
 <body class="bg-gray-50">
@@ -129,10 +134,11 @@
               <a href="jobs.html" class="nav-link inline-flex items-center">
                 就业信息
               </a>
-              <a href="service.html" class="nav-link inline-flex items-center">
+              <a href="service.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary">
                 就业指导
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 transition-transform duration-300 origin-left"></span>
               </a>
-              <a href="cooperation.html" class="nav-link active inline-flex items-center">
+              <a href="cooperation.html" class="nav-link active text-primary font-medium">
                 战略合作
               </a>
               <a href="about.html" class="nav-link inline-flex items-center">
