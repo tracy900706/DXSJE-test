@@ -13,6 +13,104 @@
   <!-- 自定义CSS -->
   <link rel="stylesheet" href="../css/colors.css">
   <link rel="stylesheet" href="../css/custom.css">
+  <style>
+    :root {
+      --primary: #e41f1f;
+      --primary-dark: #c41a1a;
+      --primary-light: #ff2424;
+    }
+    
+    /* 导航栏样式 */
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 导航链接样式 */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link.active {
+      font-weight: 500;
+    }
+
+    /* 移除所有下划线动画相关样式 */
+    .nav-link span {
+      display: none;
+    }
+    
+    /* 关于我们卡片样式 */
+    .about-card {
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+    }
+    
+    .about-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* 图标颜色 */
+    .about-icon {
+      color: var(--primary);
+    }
+    
+    /* 按钮样式 */
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+    }
+    
+    /* 标题装饰线 */
+    .section-title::after {
+      background-color: var(--primary);
+    }
+    
+    /* 链接悬停效果 */
+    .hover-primary:hover {
+      color: var(--primary);
+    }
+    
+    /* 时间轴样式 */
+    .timeline-dot {
+      background-color: var(--primary);
+    }
+    
+    .timeline-line {
+      background-color: var(--primary);
+      opacity: 0.2;
+    }
+    
+    /* 团队成员卡片 */
+    .team-card:hover .team-info {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    /* 数据统计 */
+    .stats-number {
+      color: var(--primary);
+      font-weight: bold;
+    }
+    
+    /* 使命愿景背景 */
+    .mission-vision {
+      background: linear-gradient(45deg, var(--primary), var(--primary-light));
+      color: white;
+    }
+  </style>
 </head>
 <body class="bg-gray-50">
   <!-- 导航栏 -->
