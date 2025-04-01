@@ -25,6 +25,11 @@
       color: var(--primary) !important;
     }
 
+    /* 移除所有下划线动画相关样式 */
+    .nav-link span {
+      display: none;
+    }
+
     /* 状态标签样式 */
     .status-tag.ongoing {
       color: #2563eb;
@@ -104,14 +109,22 @@
           <!-- 主导航菜单 -->
           <div class="flex items-center justify-center flex-grow">
             <div class="flex items-center space-x-6">
-              <a href="home.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">首页</a>
-              <a href="news.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">新闻中心</a>
-              <a href="policy.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">政策指引</a>
+              <a href="home.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary">
+                首页
+              </a>
+              <a href="news.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary">
+                新闻中心
+              </a>
+              <a href="policy.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary">
+                政策指引
+              </a>
               <a href="jobs.html" class="nav-link active">就业信息</a>
-              <a href="service.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">就业指导</a>
-              <a href="cooperation.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">战略合作</a>
-              <a href="about.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">地方频道</a>
-              <a href="contact.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700">联系我们</a>
+              <a href="service.html" class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary">
+                就业指导
+              </a>
+              <a class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary" style="pointer-events: none; cursor: default;">战略合作</a>
+              <a class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary" style="pointer-events: none; cursor: default;">地方频道</a>
+              <a class="nav-link relative whitespace-nowrap px-1 text-sm text-gray-700 hover:text-primary" style="pointer-events: none; cursor: default;">联系我们</a>
             </div>
           </div>
           
