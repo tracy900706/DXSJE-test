@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- 自定义CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
   <style>
     :root {
       --primary: #e41f1f;
@@ -22,6 +24,8 @@
       position: relative;
       transition: color 0.3s ease;
       color: #4B5563 !important;  /* text-gray-700 */
+      font-size: 1rem !important;
+      font-weight: normal !important;
     }
 
     .nav-container .nav-link:hover {
@@ -30,12 +34,13 @@
 
     .nav-container .nav-link.active {
       color: var(--primary) !important;
-      font-weight: 500;
+      font-weight: 500 !important;
+      font-size: 1.1rem !important;
     }
 
     /* 移除所有导航下划线动画 */
     .nav-container .nav-link span {
-      display: none;
+      display: none !important;
     }
     
     /* 合作伙伴卡片样式 */
@@ -101,7 +106,14 @@
 
     /* 添加 text-primary 类的样式 */
     .text-primary {
-      color: var(--primary);
+      color: var(--primary) !important;
+      font-weight: 500 !important;
+    }
+
+    /* 确保导航链接的样式不被覆盖 */
+    .nav-link.text-primary {
+      color: var(--primary) !important;
+      font-weight: 500 !important;
     }
   </style>
 </head>
